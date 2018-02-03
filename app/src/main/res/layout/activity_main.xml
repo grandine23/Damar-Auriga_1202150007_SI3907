@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidhehe.riga.damarauriga_1202150007_modul1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/makan_malam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/makan_malam"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dengan_milea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makan_malam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/dengan_milea"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/makan_apa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dengan_milea"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Mau makan apa bre??"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/porsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/makan_apa"
+        android:layout_alignStart="@+id/makan_apa"
+        android:layout_below="@+id/makan_apa"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Porsi nya mau berapa bre??"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/warung1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/porsi"
+        android:layout_alignStart="@+id/porsi"
+        android:layout_below="@+id/porsi"
+        android:layout_marginTop="32dp"
+        android:onClick="launchEatbus"
+        android:text="Eatbus" />
+
+    <Button
+        android:id="@+id/warung2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/warung1"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="launchAbnormal"
+        android:text="Abnormal" />
+
+</RelativeLayout>
